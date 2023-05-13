@@ -14,7 +14,7 @@ public class CloudflareIPRangeFetcherServiceSingleton {
 
     private static CloudflareIPRangeFetcherServiceSingleton instance;
     private final List<String> ipRanges;
-    private List<String> urlIpRanges = Arrays.asList("https://www.cloudflare.com/ips-v4", "https://www.cloudflare.com/ips-v6");
+    private final List<String> urlIpRanges = Arrays.asList("https://www.cloudflare.com/ips-v4", "https://www.cloudflare.com/ips-v6");
 
     private CloudflareIPRangeFetcherServiceSingleton() {
         this.ipRanges = fetchIPRanges();
